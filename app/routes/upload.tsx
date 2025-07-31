@@ -1,5 +1,7 @@
+import FileUploader from "~/components/FileUploader";
+
 export const meta = () => ([
-    { title: 'Resumind | Upload' },
+    {title: 'Resumind | Upload' },
     {name: 'description', content: 'Upload your Resume.' },
 ])
 
@@ -46,7 +48,7 @@ const Upload = () => {
 
                             <div className="form-div">
                                 <label htmlFor="uploader">Upload Resume</label>
-                                <div>Uploader</div>
+                                <FileUploader />
                             </div>
 
                             <button className="primary-button" type="submit">
