@@ -30,7 +30,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
   useEffect(() => {
     init()
-  },[init]);
+  }, [init]);
 
   return (
     <html lang="en">
@@ -41,8 +41,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-      <script src="https://js.puter.com/v2/"></script>
-      {children}
+        <script src="https://js.puter.com/v2/"></script>
+        {children}
         <ScrollRestoration />
         <Scripts />
       </body>
